@@ -153,3 +153,9 @@ PRODUCT_PACKAGES += \
     android.hardware.wifi@1.6.vendor:64 \
     com.google.hardware.pixel.display-V4-ndk.vendor \
     com.google.hardware.pixel.display-V6-ndk.vendor
+
+# crDroid Features
+TARGET_HAS_UDFPS := true
+TARGET_ENABLE_BLUR := true
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.sys.sf.disable_blurs=1
